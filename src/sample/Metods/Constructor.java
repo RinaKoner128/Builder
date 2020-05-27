@@ -1,9 +1,10 @@
 package sample.Metods;
 
 import javafx.scene.Group;
+import sample.Metods.Objects.*;
 
-public class Ffin extends Group {
-    public Ffin() {
+public class Constructor extends Group {
+    public Constructor() {
     }
 
     public void setRring(Rring m) {

@@ -1,9 +1,12 @@
 package sample.Metods;
 
+import sample.Metods.Objects.Arrow;
+import sample.Metods.Objects.Lin;
+
 public class Transition implements Builder {
-    private Ffin ffin;
+    private Constructor constructor;
     public Transition() {
-        ffin = new Ffin();
+        constructor = new Constructor();
     }
 
     @Override
@@ -24,13 +27,13 @@ public class Transition implements Builder {
     @Override
     public void buildLin() {
         Lin lin = new Lin();
-        ffin.setLin(lin);
+        constructor.setLin(lin);
     }
 
     @Override
     public void buildArrow() {
         Arrow arrow = new Arrow();
-        ffin.setArrow(arrow);
+        constructor.setArrow(arrow);
     }
 
     @Override
@@ -44,8 +47,8 @@ public class Transition implements Builder {
     }
 
     @Override
-    public Ffin getFin() {
-        return ffin;
+    public Constructor getCon() {
+        return constructor;
     }
 
 }

@@ -1,28 +1,32 @@
 package sample.Metods;
 
+import sample.Metods.Objects.FCircl;
+import sample.Metods.Objects.Ring;
+import sample.Metods.Objects.Rring;
+
 public class Finish implements Builder {
-    private Ffin ffin;
+    private Constructor constructor;
 
     public Finish() {
-        ffin = new Ffin();
+        constructor = new Constructor();
     }
 
     @Override
     public void buildRring() {
         Rring r = new Rring();
-        ffin.setRring(r);
+        constructor.setRring(r);
     }
 
     @Override
     public void buildRing() {
         Ring r = new Ring();
-        ffin.setRing(r);
+        constructor.setRing(r);
     }
 
     @Override
     public void buildFCircl() {
         FCircl c = new FCircl();
-        ffin.setFCircl(c);
+        constructor.setFCircl(c);
     }
 
     @Override
@@ -47,8 +51,8 @@ public class Finish implements Builder {
     }
 
     @Override
-    public Ffin getFin() {
-        return ffin;
+    public Constructor getCon() {
+        return constructor;
     }
 
 }

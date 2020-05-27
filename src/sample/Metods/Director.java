@@ -1,7 +1,7 @@
 package sample.Metods;
 
 public class Director {
-    public Ffin construct(Builder builder) {
+    public Constructor construct(Builder builder) {
         builder.buildRring();
         builder.buildRing();
         builder.buildFCircl();
@@ -9,7 +9,7 @@ public class Director {
         builder.buildText();
         builder.buildLin();
         builder.buildArrow();
-        return builder.getFin();
+        return builder.getCon();
     }
 
 }

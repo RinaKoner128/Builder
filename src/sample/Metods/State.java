@@ -1,10 +1,13 @@
 package sample.Metods;
 
+import sample.Metods.Objects.Rect;
+import sample.Metods.Objects.Texts;
+
 public class State implements Builder {
-    private Ffin ffin;
+    private Constructor constructor;
 
     public State() {
-        ffin = new Ffin();
+        constructor = new Constructor();
     }
 
     @Override
@@ -35,18 +38,18 @@ public class State implements Builder {
     @Override
     public void buildRect() {
         Rect rect = new Rect();
-        ffin.setRect(rect);
+        constructor.setRect(rect);
     }
 
     @Override
     public void buildText() {
         Texts t = new Texts();
-        ffin.setTexts(t);
+        constructor.setTexts(t);
     }
 
     @Override
-    public Ffin getFin() {
-        return  ffin;
+    public Constructor getCon() {
+        return constructor;
     }
 
 }

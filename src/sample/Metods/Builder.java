@@ -8,5 +8,5 @@ public interface Builder {
     void buildArrow();
     void buildRect();
     void buildText();
-       Ffin getFin();
+       Constructor getCon();
 }
