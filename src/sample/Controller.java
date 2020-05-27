@@ -18,16 +18,16 @@ public class Controller {
 
     public void ClSt(ActionEvent actionEvent) {
         pane.getChildren().clear();
-        Sstate sstate = new Sstate();
-        sstate = direct.Sconstruct(new State());
-        pane.getChildren().add(sstate);// добавление к панели pane
+        Ffin ffin = new Ffin();
+        ffin= direct.construct(new State());
+        pane.getChildren().add(ffin);// добавление к панели pane
     }
 
     public void ClTr(ActionEvent actionEvent) {
         pane.getChildren().clear();
-        Ttrl ttrl = new Ttrl();
-        ttrl = direct.Tconstruct(new Transition());
-        pane.getChildren().add(ttrl);// добавление к панели pane
+        Ffin ffin = new Ffin();
+        ffin = direct.construct(new Transition());
+        pane.getChildren().add(ffin);// добавление к панели pane
     }
 
     public void Clean(ActionEvent actionEvent) {

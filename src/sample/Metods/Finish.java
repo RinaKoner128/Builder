@@ -51,13 +51,4 @@ public class Finish implements Builder {
         return ffin;
     }
 
-    @Override
-    public Ttrl getTtrl() {
-        return null;
-    }
-
-    @Override
-    public Sstate getSstate() {
-        return null;
-    }
 }

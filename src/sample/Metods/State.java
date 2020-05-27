@@ -1,10 +1,10 @@
 package sample.Metods;
 
 public class State implements Builder {
-    private Sstate sstate;
+    private Ffin ffin;
 
     public State() {
-        sstate = new Sstate();
+        ffin = new Ffin();
     }
 
     @Override
@@ -35,27 +35,18 @@ public class State implements Builder {
     @Override
     public void buildRect() {
         Rect rect = new Rect();
-        sstate.setRect(rect);
+        ffin.setRect(rect);
     }
 
     @Override
     public void buildText() {
         Texts t = new Texts();
-        sstate.setTexts(t);
+        ffin.setTexts(t);
     }
 
     @Override
     public Ffin getFin() {
-        return null;
+        return  ffin;
     }
 
-    @Override
-    public Ttrl getTtrl() {
-        return null;
-    }
-
-    @Override
-    public Sstate getSstate() {
-        return sstate;
-    }
 }

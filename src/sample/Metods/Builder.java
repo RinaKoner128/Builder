@@ -9,6 +9,4 @@ public interface Builder {
     void buildRect();
     void buildText();
        Ffin getFin();
-       Ttrl getTtrl();
-       Sstate getSstate();
 }

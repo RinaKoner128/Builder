@@ -5,17 +5,11 @@ public class Director {
         builder.buildRring();
         builder.buildRing();
         builder.buildFCircl();
+        builder.buildRect();
+        builder.buildText();
+        builder.buildLin();
+        builder.buildArrow();
         return builder.getFin();
     }
 
-    public Sstate Sconstruct(Builder builder) {
-        builder.buildRect();
-        builder.buildText();
-        return builder.getSstate();
-    }
-    public Ttrl Tconstruct(Builder builder) {
-        builder.buildLin();
-        builder.buildArrow();
-        return builder.getTtrl();
-    }
 }

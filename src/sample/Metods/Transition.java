@@ -1,10 +1,9 @@
 package sample.Metods;
 
 public class Transition implements Builder {
-    private Ttrl ttrl;
-
+    private Ffin ffin;
     public Transition() {
-        ttrl = new Ttrl();
+        ffin = new Ffin();
     }
 
     @Override
@@ -25,13 +24,13 @@ public class Transition implements Builder {
     @Override
     public void buildLin() {
         Lin lin = new Lin();
-        ttrl.setLin(lin);
+        ffin.setLin(lin);
     }
 
     @Override
     public void buildArrow() {
         Arrow arrow = new Arrow();
-        ttrl.setArrow(arrow);
+        ffin.setArrow(arrow);
     }
 
     @Override
@@ -46,16 +45,7 @@ public class Transition implements Builder {
 
     @Override
     public Ffin getFin() {
-        return null;
+        return ffin;
     }
 
-    @Override
-    public Ttrl getTtrl() {
-        return ttrl;
-    }
-
-    @Override
-    public Sstate getSstate() {
-        return null;
-    }
 }
